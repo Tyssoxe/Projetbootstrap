@@ -1,0 +1,23 @@
+body {
+    color:black;
+    background-color:white;
+    background-image:url(https://images.frandroid.com/wp-content/uploads/2020/03/fond-ecran-wallpaper-huawei-p40-header.jpg);
+    margin:0;
+    }
+
+
+d-none {
+    display: none !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+
+  @media(max-width: 700px){
+  
+  #po{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  }

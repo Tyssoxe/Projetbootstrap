@@ -1,0 +1,83 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>MyContact</title>
+  </head>
+  <body>
+    <header>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+                  <a class="nav-link active" aria-current="page" href="Project boostr.html">Home</a>
+                  <a class="nav-link" href="page connection.html">connection</a>
+                  <a class="nav-link" href="contact.html">contact</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+  </header>
+    </header>
+    <h1>My Contact</h1>
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Nous contacter</h2>
+          <h3 class="section-subheading text-muted">Laisse nous tes coordonnées ci-dessous.</h3>
+        </div>
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" id="name" type="text" placeholder="Ton prénom*"
+                  data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="name:required">Ton prénom est obligatoire.</div>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="email" type="email" placeholder="Ton mail*"
+                  data-sb-validations="required,email" />
+                <div class="invalid-feedback" data-sb-feedback="email:required">Mail obligatoire.</div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">Ton email est non valide.</div>
+              </div>
+              <div class="form-group mb-md-0">
+                <input class="form-control" id="phone" type="tel" placeholder="Ton numéro de tel*"
+                  data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="phone:required">Numéro de tel obligatoire.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
+                <textarea class="form-control" id="message" placeholder="Laisse nous un message*"
+                  data-sb-validations="required"></textarea>
+                <div class="invalid-feedback" data-sb-feedback="message:required">Un message est requis.</div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center text-white mb-3">
+              <div class="fw-bolder">Ton message nous a bien été transmit !</div>
+            </div>
+          </div>
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Ton texte est non valide.</div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
+            type="submit">Envoie ton message</button></div>
+        </form>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
